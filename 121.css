@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.grid-container {
+  display: grid;
+  grid-gap: 15px 15px;
+  grid-template-columns: auto auto auto;
+  padding: 15px;
+  background-color: #daeeff;
+  height: 100vh;
+}
+
+.grid-item {
+  background-color: #2196f3;
+  font-size: 30px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+  .grid-item {
+    margin-bottom: 15px;
+  }
+}
